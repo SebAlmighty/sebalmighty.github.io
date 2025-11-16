@@ -1,0 +1,229 @@
+/* == VARIABLES DE COULEUR (Palette) == */
+        :root {
+            --couleur-principale: #0056b3; /* Un bleu professionnel */
+            --couleur-secondaire: #333;   /* Texte sombre */
+            --couleur-fond: #f4f7f6;      /* Fond général (très léger gris) */
+            --couleur-carte: #ffffff;     /* Fond des sections (blanc) */
+            --couleur-ombre: rgba(0, 0, 0, 0.08);
+            --couleur-bordure: #e0e0e0;
+        }
+
+        /* == STYLES GLOBAUX == */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--couleur-fond);
+            color: var(--couleur-secondaire);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        /* == EN-TÊTE (Votre nom et titre) == */
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: var(--couleur-carte);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px var(--couleur-ombre);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: var(--couleur-principale);
+        }
+
+        header .poste {
+            font-size: 1.2em;
+            font-style: italic;
+            color: #555;
+        }
+
+        header .contact-links {
+            margin-top: 15px;
+        }
+        
+        header .contact-links a {
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
+            color: var(--couleur-principale);
+            font-weight: 500;
+            transition: transform 0.2s ease;
+        }
+        
+        header .contact-links a:hover {
+            text-decoration: underline;
+            transform: translateY(-2px);
+        }
+
+        /* == STRUCTURE DES SECTIONS == */
+        .section {
+            background-color: var(--couleur-carte);
+            padding: 25px 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px var(--couleur-ombre);
+        }
+
+        .section h2 {
+            font-size: 1.8em;
+            color: var(--couleur-principale);
+            border-bottom: 2px solid var(--couleur-fond);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* == SECTION PROFIL / À PROPOS == */
+        .profil-contenu {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profil-contenu img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--couleur-principale);
+        }
+
+        /* == SECTION COMPÉTENCES (Tags) == */
+        .competences-liste {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .competences-liste li {
+            background-color: var(--couleur-fond);
+            border: 1px solid var(--couleur-bordure);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.95em;
+            font-weight: 500;
+        }
+
+        /* == SECTION PROJETS (Le plus important !) == */
+        .projets-grille {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive */
+            gap: 20px;
+        }
+
+        .projet-carte {
+            background-color: #fff;
+            border: 1px solid var(--couleur-bordure);
+            border-radius: 8px;
+            overflow: hidden; /* Pour le design */
+            display: flex;
+            flex-direction: column;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+        
+        .projet-carte:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px var(--couleur-ombre);
+        }
+
+        .projet-carte .projet-contenu {
+            padding: 20px;
+            flex-grow: 1; /* Permet aux cartes d'avoir la même hauteur */
+        }
+        
+        .projet-carte h3 {
+            margin-top: 0;
+            color: var(--couleur-secondaire);
+        }
+        
+        .projet-carte p {
+            font-size: 0.95em;
+            margin-bottom: 15px;
+        }
+        
+        .projet-tags {
+            margin-bottom: 15px;
+        }
+        
+        .projet-tags span {
+            display: inline-block;
+            background-color: var(--couleur-principale);
+            color: #fff;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        
+        .projet-liens {
+            padding: 15px 20px;
+            background-color: var(--couleur-fond);
+            border-top: 1px solid var(--couleur-bordure);
+            text-align: right;
+        }
+
+        .btn-github {
+            display: inline-block;
+            background-color: #24292e; /* Couleur de GitHub */
+            color: #ffffff;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-github:hover {
+            background-color: #444;
+        }
+
+        /* == SECTION FORMATION == */
+        .formation-item {
+            margin-bottom: 15px;
+        }
+        .formation-item h3 {
+            margin: 0;
+            color: var(--couleur-secondaire);
+        }
+        .formation-item p {
+            margin: 0;
+            font-style: italic;
+        }
+        
+        /* == PIED DE PAGE == */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        /* == RESPONSIVE DESIGN (Mobile) == */
+        @media (max-width: 768px) {
+            .profil-contenu {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            header h1 {
+                font-size: 2em;
+            }
+            
+            .section h2 {
+                font-size: 1.5em;
+            }
+        }
