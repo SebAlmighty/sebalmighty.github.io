@@ -3,41 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon CV Numérique - [VOTRE NOM]</title>
+    <title>CV Numérique — Sebastian Novak</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-
     <div class="container">
-
         <header>
-            <h1>Sebastian NOVAK</h1>
-            <p class="poste">Étudiant en BUT Informatique - Recherche de stage</p>
-            <div class="contact-links">
-                <a href="mailto:sebastian.novak276@gmail.com"><img width="50" height="50" src="./img/email_logo.png"></a>
-                &bull;
-                <a href="https://www.linkedin.com/in/sebastian-novak-9bb6b335a" target="_blank"><img width="50" height="50" src="./img/linked_in_logo.webp"></a>
-                &bull;
-                <a href="https://github.com/SebAlmighty" target="_blank"><img width="50" height="50" src="./img/github_logo.png"></a>
+            <div class="hero">
+                <div class="hero-photo">
+                    <img src="./img/NOVAK portraits iut info-437.jpg" alt="Portrait de Sebastian Novak">
+                </div>
+                <div class="hero-info">
+                    <h1>Sebastian NOVAK</h1>
+                    <p class="poste">Étudiant en BUT Informatique - Recherche de stage</p>
+                    <div class="hero-actions">
+                        <div class="contact-links">
+                            <a href="mailto:sebastian.novak276@gmail.com" aria-label="Email">
+                                <i class="ti ti-mail"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/sebastian-novak-9bb6b335a" target="_blank" aria-label="Profil LinkedIn">
+                                <i class="ti ti-brand-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/SebAlmighty" target="_blank" aria-label="Profil GitHub">
+                                <i class="ti ti-brand-github"></i>
+                            </a>
+                        </div>
+                        <a class="btn-primary" href="./Sebastian_Novak_CV.pdf" download>
+                            Télécharger mon CV
+                        </a>
+                    </div>
+                </div>
             </div>
         </header>
 
         <main>
             <section class="section">
-                <h2>👨‍💻 Profil</h2>
+                <h2><i class="ti ti-user"></i> Profil</h2>
                 <div class="profil-contenu">
-                    <img src="./img/NOVAK portraits iut info-437.jpg" alt="Photo de profil">
                     <p>
-                        Je suis un étudiant en BUT 2 Informatique à l'Université de Lille en recherche de stage à partir du 6 avril jusqu'au mois de juin. Je
-                        possède des connaissances en une multitude de langages de programmation, notament le Java, SQL, HTML et CSS. Pérséverant
-                        et motivé, je suis capable de m'intégrer et m'adapter à beaucoup de conditions de travail, ainsi que de communiquer et
-                        m'intégrer facilement dans une équipe.
+                        Étudiant en BUT 2 Informatique à l'Université de Lille, je recherche un stage du 6 avril à fin juin. Curieux et rigoureux, je maîtrise Java, SQL, HTML, CSS et Python. Persévérant et motivé, je m'intègre rapidement à une équipe, communique aisément et m'adapte aux environnements exigeants.
                     </p>
                 </div>
             </section>
 
             <section class="section">
-                <h2>🔧 Compétences Techniques</h2>
+                <h2><i class="ti ti-tools"></i> Compétences Techniques</h2>
                 <ul class="competences-liste">
                     <li>HTML</li>
                     <li>CSS</li>
@@ -50,7 +61,29 @@
             </section>
 
             <section class="section">
-                <h2>📁 Projets Réalisés</h2>
+                <h2><i class="ti ti-hexagon-3d"></i> Soft Skills</h2>
+                <ul class="softskills-liste">
+                    <li>
+                        <h3>Communication claire</h3>
+                        <p>Rédaction de comptes-rendus pour le tuteur et animation de démos d’itérations.</p>
+                    </li>
+                    <li>
+                        <h3>Esprit d’équipe</h3>
+                        <p>Facilitation des réunions Scrum et soutien des binômes sur les sujets bloquants.</p>
+                    </li>
+                    <li>
+                        <h3>Autonomie & curiosité</h3>
+                        <p>Veille techno hebdo (Java, DevOps) et mises à jour continues du portfolio.</p>
+                    </li>
+                    <li>
+                        <h3>Gestion du temps</h3>
+                        <p>Planification des sprints étudiants avec priorisation MoSCoW et suivi Trello.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2><i class="ti ti-folder-code"></i> Projets Réalisés</h2>
                 <div class="projets-grille">
 
                     <div class="projet-carte">
@@ -106,9 +139,6 @@
                             </a>
                         </div>
                     </div>
-                    
-                    </div>
-
                     <div class="projet-carte">
                         <div class="projet-contenu">
                             <h3>Site E-Portfolio</h3>
@@ -127,38 +157,78 @@
                         </div>
                     </div>
                     
-                    </div>
-
-                    <div class="projet-carte">
-                        <div class="projet-contenu">
-                            <h3>Site E-Portfolio</h3>
-                            <p>
-                                Création d'un CV numérique en constante amélioration mettant en valeur les compétences en HTML et CSS.
-                            </p>
-                            <div class="projet-tags">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                            </div>
-                        </div>
-                        <div class="projet-liens">
-                            <a href="https://sebalmighty.github.io" class="btn-github" target="_blank">
-                                Voir sur GitHub
-                            </a>
-                        </div>
-                    </div>
-                    
-                    </div>
+                </div>
             </section>
 
             <section class="section">
-                <h2>🎓 Formation</h2>
-                <div class="formation-item">
-                    <h3>BUT Informatique</h3>
-                    <p>IUT de Lille (2024 - Présent)</p>
+                <h2><i class="ti ti-school"></i> Formation</h2>
+                <div class="formation-liste">
+                    <div class="formation-item">
+                        <div class="formation-badge">2024 — Présent</div>
+                        <div class="formation-contenu">
+                            <div class="formation-header">
+                                <h3>BUT Informatique</h3>
+                                <span class="formation-ecole">IUT de Lille</span>
+                            </div>
+                            <p class="formation-description">
+                                Parcours orienté conception d'applications, conduite de projets agiles et déploiement d'environnements collaboratifs.
+                            </p>
+                            <ul class="formation-points">
+                                <li>Travaux pratiques Java, SQL, réseaux et intégration continue</li>
+                                <li>Projets tutorés en équipe avec rôles Scrum et livrables clients</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="formation-item">
+                        <div class="formation-badge">2021 — 2024</div>
+                        <div class="formation-contenu">
+                            <div class="formation-header">
+                                <h3>Baccalauréat Général</h3>
+                                <span class="formation-ecole">Lycée Gustave Eiffel, Armentières</span>
+                            </div>
+                            <p class="formation-description">
+                                Spécialités Mathématiques et NSI, avec un accent sur la rigueur scientifique et la logique de programmation.
+                            </p>
+                            <ul class="formation-points">
+                                <li>Projets Python axés sur l'algorithmique et la structuration des données</li>
+                                <li>Travaux d'analyse et de restitution orale devant jury pédagogique</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="formation-item">
-                    <h3>Baccalauréat Général (Spé Maths,NSI)</h3>
-                    <p>Lycée Gustave Eiffel, Armentières (Obtenu en 2024)</p>
+            </section>
+
+            <section class="section">
+                <h2><i class="ti ti-language"></i> Langues</h2>
+                <div class="langues-grille">
+                    <div class="langue-carte">
+                        <div class="langue-niveau">
+                            <span>Français</span>
+                            <strong>C1</strong>
+                        </div>
+                        <p>Expression écrite et orale professionnelle et personnelle.</p>
+                    </div>
+                    <div class="langue-carte">
+                        <div class="langue-niveau">
+                            <span>Anglais</span>
+                            <strong>C1</strong>
+                        </div>
+                        <p>Lecture de documentation technique et réunions avec étudiants internationaux.</p>
+                    </div>
+                    <div class="langue-carte">
+                        <div class="langue-niveau">
+                            <span>Allemand</span>
+                            <strong>B1 scolaire</strong>
+                        </div>
+                        <p>Communication courante et échanges dans un contexte académique.</p>
+                    </div>
+                    <div class="langue-carte">
+                        <div class="langue-niveau">
+                            <span>Roumain</span>
+                            <strong>C1</strong>
+                        </div>
+                        <p>Communication courante et échanges dans un contexte académique et personnel.</p>
+                    </div>
                 </div>
             </section>
 
