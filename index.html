@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Numérique — Sebastian Novak</title>
+    <title>Sebastian Novak</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -38,7 +38,7 @@
         </header>
 
         <main>
-            <section class="section">
+            <section id="profil" class="section">
                 <h2><i class="ti ti-user"></i> Profil</h2>
                 <div class="profil-contenu">
                     <p>
@@ -47,7 +47,7 @@
                 </div>
             </section>
 
-            <section class="section">
+            <section id="competences" class="section">
                 <h2><i class="ti ti-tools"></i> Compétences Techniques</h2>
                 <ul class="competences-liste">
                     <li>HTML</li>
@@ -61,7 +61,7 @@
                 </ul>
             </section>
 
-            <section class="section">
+            <section id="projets" class="section">
                 <h2><i class="ti ti-hexagon-3d"></i> Soft Skills</h2>
                 <ul class="softskills-liste">
                     <li>
@@ -83,7 +83,7 @@
                 </ul>
             </section>
 
-            <section class="section">
+            <section id="formation" class="section">
                 <h2><i class="ti ti-folder-code"></i> Projets Réalisés</h2>
                 <div class="projets-grille">
 
@@ -258,6 +258,30 @@
         </footer>
 
     </div>
+    <!-- <a href="#" id="btn-retour-haut" class="btn-retour-haut" aria-label="Retour en haut">
+    <i class="ti ti-arrow-up"></i>
+    </a>
+
+    <script>
+        const boutonRetour = document.getElementById('btn-retour-haut');
+
+        window.addEventListener('scroll', () => {
+            // Le bouton apparaît si on a défilé de plus de 300px
+            if (window.scrollY > 300) {
+                boutonRetour.classList.add('visible');
+            } else {
+                boutonRetour.classList.remove('visible');
+            }
+        });
+
+        boutonRetour.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Défilement fluide
+            });
+        });
+    </script> -->
 
 </body>
 </html>
