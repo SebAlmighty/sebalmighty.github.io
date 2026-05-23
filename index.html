@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sebastian Novak</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css?v=1">
 </head>
 <body>
     <div class="container">
@@ -87,42 +87,175 @@
                 <h2><i class="ti ti-folder-code"></i> Projets Réalisés</h2>
                 <div class="projets-grille">
 
-                    <div class="projet-carte">
+                    <div class="projet-carte" style="cursor: pointer;" onclick="ouvrirModale(this)"
+                         data-titre="Merge Conflict"
+                         data-sous-titre="Développement d'un jeu 'Shoot them'up' en TypeScript"
+                         data-description="Ce projet en groupe de 3 a eu pour but la création d'un jeu vidéo Shoot them'up qui peut être joué en solo ou en multijoueur en ligne en utilisant TypeScript et socket.io. Il met en valeur tout ce qu'on a appris pendant le 4ème semestre en ce qui concerne le JavaScript et le TypeScript. Nous devions utiliser les MileStones, Issue Board et Issues de GitLab pour gérer notre projet de la façon la plus efficace en le séparant en petites tâches précises et en organisant temporellement chaque tâche à effectuer. La note finale a été basée sur la qualité du projet ainsi que sur le respect de la méthode de gestion de projet imposée. Mon rôle dans ce projet s'est axé sur le développement de mécaniques essentielles du jeu telles que le tir des personnages et des ennemis ainsi que la gestion des objets bonus et l'ajout des effets sonores pour rendre le jeu plus artistiquement chargé. Le travail a été très raisonablement reparti entre chaque membre de l'équipe, un exemple positif d'un projet de grande envergure bien organisé."
+                         data-tags="TypeScript, Socket.io, Git, BUT2"
+                         data-image="./img/DoomGuy_and_Marie.png"
+                         data-lien="https://github.com/SebAlmighty/SAE-3.03-Deploiement">
+
+                         <div class="projet-image">
+                            <img src="./img/DoomGuy_and_Marie.png" alt="Aperçu du projet Merge Conflict">
+                        </div>
+
                         <div class="projet-contenu">
-                            <h3>Projet de developpement d’application en java</h3>
+                            <h3>Merge Conflict</h3>
                             <p>
-                                Projet en équipe (3 personnes) : Conception et développement d’une application JavaFX d’appariement de jeunes pour un échange international. Implémentation d’algorithmes d’optimisation basés sur des critères multi-paramètres et création d’une interface utilisateur ergonomique.
+                                Développement d'un jeu 'Shoot them'up' en TypeScript
+                            </p>
+                            <div class="projet-tags">
+                                <span>TypeScript</span>
+                                <span>Socket.io</span>
+                                <span>Git</span>
+                                <span>BUT2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projet-carte" style="cursor: pointer;" onclick="ouvrirModale(this)"
+                         data-titre="Projet de développement d'une API REST"
+                         data-sous-titre="Développement d'une API REST de géstion de déchets en Java (JEE)"
+                         data-description="Ce projet a eu comme but de créer une plateforme de gestion de déchets (types de déchets, points de collecte, les dépôts de déchets, etc...) par biais de requêtes web telles que GET, POST, PUT, PATCH et DELETE en créant une API REST en Java avec un serveur Tomcat et une base de données en PostgreSQL utilisant une authentification par biais de token BASIC. Ce projet met en valeur nos compétences acquises pendant le cours du 4ème semestre de développement WEB. Ce projet était censé être développé en groupe de 2 mais dans mon cas ça a été un projet solo, mon rôle s'étendant sur tout le projet c'est à dire le développement de l'API (en utilisant le modèle MVC, créant des endpoints), la création et gestion des bases de données, la création de requêtes de l'API avec l'application Bruno mais aussi la création complète de la documentation de l'API et de ses capacités. En ce qui concerne les difficultés, je n'ai pas rencontrés de problèmes pendant ce projet."
+                         data-tags="Java, JEE, API REST, Tomcat, BUT2"
+                         data-image="./img/Rest_API.png"
+                         data-lien="https://github.com/SebAlmighty/SAE-3.03-Deploiement">
+
+                         <div class="projet-image">
+                            <img src="./img/Rest_API.png" alt="Aperçu du projet Rest">
+                        </div>
+
+                        <div class="projet-contenu">
+                            <h3>Projet de développement d'une API REST</h3>
+                            <p>
+                                Développement d'une API REST de géstion de déchets en Java (JEE)
+                            </p>
+                            <div class="projet-tags">
+                                <span>Java</span>
+                                <span>JEE</span>
+                                <span>API REST</span>
+                                <span>Tomcat</span>
+                                <span>BUT2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projet-carte" style="cursor: pointer;" onclick="ouvrirModale(this)"
+                         data-titre="Projet de déploiement d'un Serveur Matrix avec un client Element"
+                         data-sous-titre="Déploiement intégral d'un serveur matrix avec un client Element utilisant une base de données PostgreSQL"
+                         data-description="Ce projet en équipe de 3 avait pour but la création et le paramétrage d'un client Element en utilisant un serveur matrix et une base de données PostgreSQL, tout en créant des procédures (tutoriels) expliquant comment reproduire tout ce qui a été fait dans ce projet de manière efficace. Il met en valeur nos compétences de déploiement et de gestion réseau acquises pendant la première année de BUT Informatique, mais aussi celles acquises au 3ème semestre (2ème année). Mon rôle dans ce projet a été dans le paramétrage des machines virtuelles afin de faire fonctionner toutes les parties correctement, mais aussi la création des procédures. Nous avons rencontrés certaines difficultés à paramétrer les machines virtuelles correctement mais la documentation de Matrix, Element et PostgreSQL nous ont aidés à surpasser ces difficultés."
+                         data-tags="Bash, Linux, PostgreSQL, Markdown / Emacs, BUT2"
+                         data-image="./img/element.jpeg"
+                         data-lien="https://github.com/SebAlmighty/SAE-3.03-Deploiement">
+
+                         <div class="projet-image">
+                            <img src="./img/element.jpeg" alt="Aperçu du projet Element">
+                        </div>
+
+                        <div class="projet-contenu">
+                            <h3>Projet de déploiement d'un Serveur Matrix avec un client Element</h3>
+                            <p>
+                                Déploiement d'un serveur Matrix avec un client Element et création de procédures afin de pouvoir refaire tout le processus de manière rapide et efficace.
+                            </p>
+                            <div class="projet-tags">
+                                <span>Bash</span>
+                                <span>Linux</span>
+                                <span>PostgreSQL</span>
+                                <span>Markdown / Emacs</span>
+                                <span>BUT2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projet-carte" style="cursor: pointer;" onclick="ouvrirModale(this)"
+                         data-titre="Projet de développement d’un jeu de labyrinthes"
+                         data-sous-titre="Création d'un jeu type maze / labyrinthe en Java utilisant le modèle MVC (Model View Controller)"
+                         data-description="Ce projet effectué dans une équipe de 5 personnes avait pour objectif la création d'un jeu vidéo ayant comme but de trouver la sortie d'un labyrinthe avec le moins de mouvement possible. De plus le jeu devait contenir un mode progression et un mode libre ainsi que des niveaux de difficultés variables. Le jeu devait être fait en respectant un cahier des charges précis donné par le client (dans notre cas, les professeurs), en utilisant le patron de conception MVC et en faisant des interfaces intuitives à l'aide de JavaFX. Les labyrinthes ont été construits de façon aléatoire grâce à l'algorithme de Prim (comme le cahier des charges l'indiquait). Mon rôle dans ce projet a été axé sur le développement du contrôleur et ses liens / communication avec le modèle, mais aussi au niveau de la vue afin d'ajouter des détails utiles pour le joueur pendant une partie."
+                         data-tags="Java, JavaFX, Qualité de Développement / Dév Efficace, BUT2"
+                         data-image="./img/Labirint.png"
+                         data-lien="https://github.com/SebAlmighty/SAE-3.02-Labyrinthes">
+
+                         <div class="projet-image">
+                            <img src="./img/Labirint.png" alt="Aperçu du projet Labirint">
+                        </div>
+
+                        <div class="projet-contenu">
+                            <h3>Projet de développement d’un jeu de labyrinthes</h3>
+                            <p>
+                                Projet Java : Developpement d'un jeu de labyrinthes en utilisant le patron de conveption MVC contenant un mode libre et un mode progression. Les labyrinthes sont construits avec des algorithmes précis (Prim) et le mode progression contient plusieurs défis afin de donner de la variété au joueur.
                             </p>
                             <div class="projet-tags">
                                 <span>Java</span>
                                 <span>JavaFX</span>
+                                <span>Qualité de Développement / Dév Efficace</span>
+                                <span>BUT2</span>
                             </div>
-                        </div>
-                        <div class="projet-liens">
-                            <a href="https://github.com/SebAlmighty/SAE-2.02" class="btn-github" target="_blank">
-                                Voir sur GitHub
-                            </a>
                         </div>
                     </div>
 
-                    <div class="projet-carte">
+                    <div class="projet-carte" style="cursor: pointer;" onclick="ouvrirModale(this)"
+                         data-titre="Projet de développement d’un jeu avec Scrum"
+                         data-sous-titre="Création d'un jeu vidéo fonctionnant sur le Shell en 4 jours utilisant la méthodologie agile Scrum"
+                         data-description="Ce projet a marqué le début de la deuxième année de BUT Informatique. C'était un projet en équipe aléatoire de 5 personnes où nous avions la tâche de créer un jeu en Java utilisant la méthodologie Agile Scrum qui necéssitait une organisation bien plus intense que ce qu'on avait fait auparavant. Le jeu, nommé Gamblor, était axé sur le sujet des jeux de hasard comme le Blackjack et la roulette contenant aussi certaines fonctionnalités ludiques telles que les évenements aléatoires, un magasin permettant d'acheter des objets spéciaux (similaire au jeu Balatro) mais aussi un 'marché noir' permettant de se faire plus d'argent en vendant certaines posessions personnelles. Ce projet met en valeur toutes nos compétences acquises en BUT 1 (Java, POO, travail en équipe) mais cela nous a introduit aussi à la méthodologie Scrum qui nous a permis d'effectuer nos tâches plus efficacement grâce à un tableau kanban et une rétrospéctive quotidienne, ainsi que les users stories et la gestion des sprints. Mon rôle dans ce projet a été axé sur la création des modes de jeu (blackjack, roulette, machine à sous) mais aussi sur la conception des évenements aléatoires et les contenus des magasins et du 'marché noir'. De plus, j'ai aussi eu un un rôle dans la gestion du projet en étant Scrum Master et en mettant en place les User Stories ainsi que des documents de rétrospéctive pour les journées de travail. Grâce à une organisation solide et un travail d'équipe efficace nous n'avons rencontré que peu de difficultés pendant la création de ce jeu, cependant l'adaptation à la méthodologie Scrum a pris un peu de temps étant notre premier projet utilisant cette méthodologie."
+                         data-tags="Java, Scrum, BUT2"
+                         data-image="./img/Gamblor.png"
+                         data-lien="https://github.com/SebAlmighty/Projet_Agile_S3">
+
+                         <div class="projet-image">
+                            <img src="./img/Gamblor.png" alt="Aperçu du projet Scrum">
+                        </div>
+
                         <div class="projet-contenu">
                             <h3>Projet de développement d’un jeu avec Scrum</h3>
                             <p>
-                                Projet Java (Scrum) : Conception et développement du jeu Gamblor, combinant plusieurs mini-jeux de hasard (Blackjack, roulette, machine à sous). Mise en œuvre d’une architecture modulaire, gestion des états du joueur et intégration d’événements dynamiques pour enrichir l’expérience de jeu.
+                                Projet Java (Scrum) : Conception et développement du jeu Gamblor, combinant plusieurs mini-jeux de hasard (Blackjack, roulette, machine à sous).
                             </p>
                             <div class="projet-tags">
                                 <span>Java</span>
+                                <span>Scrum</span>
+                                <span>BUT2</span>
                             </div>
-                        </div>
-                        <div class="projet-liens">
-                            <a href="https://github.com/SebAlmighty/Projet_Agile_S3" class="btn-github" target="_blank">
-                                Voir sur GitHub
-                            </a>
                         </div>
                     </div>
 
-                    <div class="projet-carte">
+                    <div class="projet-carte" style="cursor: pointer;" onclick="ouvrirModale(this)"
+                         data-titre="Projet de developpement d’application en java"
+                         data-sous-titre="Création d'une application d'échanges internationaux (Erasmus) avec Java et JavaFX"
+                         data-description="Développement d'une application JavaFX permettant de gérer des échanges de jeunes entre différents pays en utilisant la théorie des graphes afin d'optimiser les échanges selon un certain nombre de critères concernant chaque jeune individuellement. Ce projet qui a été réparti sur 3 mois a marqué la fin de notre première année de BUT Informatique. Le projet a fusionné trois matières qu'on pratiquaient pendant le 2ème semestre : Les Graphes, Le Développement Orienté Objet (POO) et IHM (Interface Homme-Machine). Etant donné que c'était un projet de groupe (3 personnes), la bonne communication et la rigueur on été de grands atout à la complétion du projet. Ma contribution a été principalement concentrée sur le back-end (le fonctionnement 'mécanique' de l'appli) mais aussi sur l'interface en JavaFX. Pendant ce projet nous avons rencontrés quelques difficultés en particulier avec le JavaFX puisqu'on s'habituait encore à comment l'utiliser proprement mais nous avons surmonté ces difficultés en travaillant ensemble."
+                         data-tags="Java, JavaFX, BUT1"
+                         data-image="./img/Erasmus.png"
+                         data-lien="https://github.com/SebAlmighty/SAE-2.02">
+
+                         <div class="projet-image">
+                            <img src="./img/Erasmus.png" alt="Aperçu du projet JavaFX">
+                        </div>
+
+                        <div class="projet-contenu">
+                            <h3>Projet de developpement d’application en java</h3>
+                            <p>
+                                Conception et développement d’une application JavaFX d’appariement de jeunes pour un échange international.
+                            </p>
+                            <div class="projet-tags">
+                                <span>Java</span>
+                                <span>JavaFX</span>
+                                <span>BUT1</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="projet-carte" style="cursor: pointer;" onclick="ouvrirModale(this)"
+                         data-titre="Projet d'installation de réseaux"
+                         data-sous-titre="Création d'une VM et connexion à GitLab/GitHub"
+                         data-description="Ce projet d'équipe (3 personnes) consistait à configurer une machine virtuelle sous Linux de A à Z. Nous avons mis en place un environnement de développement complet, géré les clés SSH pour la connexion aux dépôts distants (GitLab/GitHub), et rédigé la documentation avec Ascii Doctor. Ce projet de 1ère année de BUT Informatique met en valeur nos compétences réseau et de paramétrage d'une machine virtuelle ainsi que la documentation exhaustive de notre travail. Ma contribution à ce projet a été placée dans l'ensemble du projet, la configuration de la VM, l'installation et configuration des programmes nécessaires et la documentation du travail effectué. Nous n'avons pas eu de difficultés à mettre en place tout cela, la documentation nous a été très claire."
+                         data-tags="Ascii Doctor, CSS, Linux, Bash, BUT1"
+                         data-image="./img/datacenter.jpg"
+                         data-lien="https://github.com/SebAlmighty/S2.03">
+
+                         <div class="projet-image">
+                            <img src="./img/datacenter.jpg" alt="Aperçu du projet Reseau">
+                        </div>
+
                         <div class="projet-contenu">
                             <h3>Projet d'installation de réseaux</h3>
                             <p>
@@ -132,53 +265,24 @@
                                 <span>Ascii Doctor</span>
                                 <span>CSS</span>
                                 <span>Linux</span>
-                            </div>
-                        </div>
-                        <div class="projet-liens">
-                            <a href="https://github.com/SebAlmighty/S2.03" class="btn-github" target="_blank">
-                                Voir sur GitHub
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="projet-carte">
-                        <div class="projet-contenu">
-                            <h3>Projet de développement d’un jeu de labyrinthes</h3>
-                            <p>
-                                Projet Java : Developpement d'un jeu de labyrinthes en utilisant le patron de conveption MVC contenant un mode libre et un mode progression. Les labyrinthes sont construits avec des algorithmes précis (Prim) et le mode progression contient plusieurs défis afin de donner de la variété au joueur.
-                            </p>
-                            <div class="projet-tags">
-                                <span>Java</span>
-                            </div>
-                        </div>
-                        <div class="projet-liens">
-                            <a href="https://github.com/SebAlmighty/SAE-3.02-Labyrinthes" class="btn-github" target="_blank">
-                                Voir sur GitHub
-                            </a>
-                        </div>
-                    </div>
-
-                    
-                    <div class="projet-carte">
-                        <div class="projet-contenu">
-                            <h3>Projet de déploiement d'un Serveur Matrix avec un client Element</h3>
-                            <p>
-                                Déploiement d'un serveur Matrix avec un client Element et création de procédures afin de pouvoir refaire tout le processus de manière rapide et efficace.
-                            </p>
-                            <div class="projet-tags">
                                 <span>Bash</span>
-                                <span>Linux</span>
-                                <span>Markdown / Emacs</span>
+                                <span>BUT1</span>
                             </div>
-                        </div>
-                        <div class="projet-liens">
-                            <a href="https://github.com/SebAlmighty/SAE-3.03-Deploiement" class="btn-github" target="_blank">
-                                Voir sur GitHub
-                            </a>
                         </div>
                     </div>
 
-                    <div class="projet-carte">
+                    <div class="projet-carte" style="cursor: pointer;" onclick="ouvrirModale(this)"
+                         data-titre="Site E-Portfolio"
+                         data-sous-titre="Création d'un site web de portfolio mettant en valeur mes compétences et mes projets"
+                         data-description="Ceci est un projet solo qui est mis à jour en permanence afin de mettre en valeur mon parcours en BUT Informatique et tout ce qui va suivre après !"
+                         data-tags="HTML, CSS, JavaScript, BUT1, BUT2, BUT3"
+                         data-image="./img/NOVAK portraits iut info-437.jpg"
+                         data-lien="https://sebalmighty.github.io/">
+
+                         <div class="projet-image">
+                            <img src="./img/NOVAK portraits iut info-437.jpg" alt="Aperçu du projet Portfolio">
+                        </div>
+
                         <div class="projet-contenu">
                             <h3>Site E-Portfolio</h3>
                             <p>
@@ -187,17 +291,59 @@
                             <div class="projet-tags">
                                 <span>HTML</span>
                                 <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>BUT1</span>
+                                <span>BUT2</span>
+                                <span>BUT3</span>
                             </div>
-                        </div>
-                        <div class="projet-liens">
-                            <a href="https://sebalmighty.github.io" class="btn-github" target="_blank">
-                                Voir sur GitHub
-                            </a>
                         </div>
                     </div>
 
                     
                 </div>
+            </section>
+
+            <section id="experiences" class="section">
+                <h2><i class="ti ti-briefcase"></i> Expériences Professionnelles</h2>
+                <div class="experiences-liste">
+                    
+                    <div class="experience-carte">
+                        <div class="experience-en-tete">
+                            <div class="experience-titre-boite">
+                                <h3>Stage Développeur en Réalité Augmentée</h3>
+                                <span class="experience-entreprise">Laboratoire Ircica, Villeneuve D'Ascq</span>
+                            </div>
+                            <div class="experience-date">Avril 2026 — Juin 2026</div>
+                        </div>
+                        <p class="experience-description">
+                            Développement d'une application en AR utilisant Unity et C# avec un casque Magic Leap 2
+                        </p>
+                        <div class="experience-tags">
+                            <span>Unity</span>
+                            <span>C#</span>
+                            <span>AR</span>
+                        </div>
+                    </div>
+
+                    <div class="experience-carte">
+                        <div class="experience-en-tete">
+                            <div class="experience-titre-boite">
+                                <h3>Job étudiant - Métallier</h3>
+                                <span class="experience-entreprise">Loison, Armentières</span>
+                            </div>
+                            <div class="experience-date">Juillet 2025 — Août 2025</div>
+                        </div>
+                        <p class="experience-description">
+                            Travail d'équipe de pose de confections métalliques et vitrages dans un chantier
+                        </p>
+                        <div class="experience-tags">
+                            <span>Travail d'équipe</span>
+                            <span>Travail manuel</span>
+                            <span>Gestion du stress</span>
+                        </div>
+                    </div>
+
+                    </div>
             </section>
 
             <section class="section">
@@ -279,30 +425,134 @@
         </footer>
 
     </div>
-    <!-- <a href="#" id="btn-retour-haut" class="btn-retour-haut" aria-label="Retour en haut">
-    <i class="ti ti-arrow-up"></i>
-    </a>
+
+    <div id="modale-projet" class="modale-overlay">
+    <div class="modale-contenu">
+        <div class="modale-banniere">
+            <img src="https://via.placeholder.com/800x300/333/fff?text=Bannière+du+projet" alt="Bannière du projet">
+        </div>
+        
+        <div class="modale-corps">
+            <h2 class="modale-titre">MergeConflict</h2>
+            <p class="modale-sous-titre">Projet de développement d'un jeu de type "Shoot them up" en TypeScript</p>
+            
+            <p class="modale-description">
+                Le projet, effectué en groupe de 3, a été important dans l'application de notre apprentissage en JavaScript et TypeScript tout au long du semestre 4. Nous devions utiliser les MileStones, Issue Board et Issues de GitLab pour gérer notre projet le mieux possible...
+            </p>
+            
+            <div class="modale-tags">
+                <span>TYPESCRIPT</span>
+                <span>SOCKET.IO</span>
+                <span>GESTION DE PROJETS</span>
+                <span>GIT</span>
+                <span>RAPPORTS</span>
+            </div>
+            
+            <div class="modale-actions">
+                <a href="#" class="btn-modale-primaire" target="_blank">
+                    Découvrir le projet <i class="ti ti-external-link"></i>
+                </a>
+                <button class="btn-modale-secondaire" id="btn-fermer-modale">Retour</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <button id="btn-retour-haut" aria-label="Retour en haut">
+        <i class="ti ti-arrow-up"></i>
+    </button>
 
     <script>
-        const boutonRetour = document.getElementById('btn-retour-haut');
+    // Sélection des éléments de la modale
+    const modale = document.getElementById('modale-projet');
+    const btnFermer = document.getElementById('btn-fermer-modale');
+    
+    // Cibles à l'intérieur de la modale
+    const modaleTitre = document.querySelector('.modale-titre');
+    const modaleSousTitre = document.querySelector('.modale-sous-titre');
+    const modaleDescription = document.querySelector('.modale-description');
+    const modaleImage = document.querySelector('.modale-banniere img');
+    const modaleLien = document.querySelector('.btn-modale-primaire');
+    const modaleTagsConteneur = document.querySelector('.modale-tags');
 
-        window.addEventListener('scroll', () => {
-            // Le bouton apparaît si on a défilé de plus de 300px
-            if (window.scrollY > 300) {
-                boutonRetour.classList.add('visible');
-            } else {
-                boutonRetour.classList.remove('visible');
-            }
-        });
+    // Fonction pour ouvrir la modale ET la remplir
+    function ouvrirModale(elementCarte) {
+        // 1. Récupération des données cachées dans la carte cliquée
+        const titre = elementCarte.getAttribute('data-titre');
+        const sousTitre = elementCarte.getAttribute('data-sous-titre');
+        const description = elementCarte.getAttribute('data-description');
+        const image = elementCarte.getAttribute('data-image');
+        const lien = elementCarte.getAttribute('data-lien');
+        const tagsBruts = elementCarte.getAttribute('data-tags');
 
-        boutonRetour.addEventListener('click', (e) => {
-            e.preventDefault();
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth' // Défilement fluide
+        // 2. Injection des textes et de l'image
+        modaleTitre.textContent = titre || "Titre du projet";
+        modaleSousTitre.textContent = sousTitre || "";
+        modaleDescription.textContent = description || "Description indisponible.";
+        
+        // Gestion de l'image de bannière (on met un placeholder si vide)
+        modaleImage.src = image || "https://via.placeholder.com/800x300/1c1f2a/ffffff?text=Image+du+projet";
+        
+        // Gestion du bouton "Découvrir le projet"
+        if (lien) {
+            modaleLien.href = lien;
+            modaleLien.style.display = 'inline-flex'; // Affiche le bouton
+        } else {
+            modaleLien.style.display = 'none'; // Cache le bouton s'il n'y a pas de lien
+        }
+
+        // 3. Gestion des petits tags (création automatique)
+        modaleTagsConteneur.innerHTML = ''; // On vide les anciens tags
+        if (tagsBruts) {
+            const tableauTags = tagsBruts.split(','); // Coupe le texte à chaque virgule
+            tableauTags.forEach(tag => {
+                const span = document.createElement('span');
+                span.textContent = tag.trim(); // .trim() enlève les espaces en trop
+                modaleTagsConteneur.appendChild(span);
             });
-        });
-    </script> -->
+        }
 
+        // 4. Affichage de la modale
+        modale.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    // Fonction pour fermer la modale
+    function fermerModale() {
+        modale.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+
+    // Écouteurs d'événements pour fermer
+    btnFermer.addEventListener('click', fermerModale);
+
+    modale.addEventListener('click', function(e) {
+        // Ferme si on clique sur le fond flou, mais pas sur la boîte blanche
+        if (e.target === modale) {
+            fermerModale();
+        }
+    });
+
+    // BOUTON RETOUR EN HAUT
+    const btnRetourHaut = document.getElementById('btn-retour-haut');
+
+    // Écoute le défilement de la page
+    window.addEventListener('scroll', () => {
+        // Si on descend de plus de 300 pixels, on affiche le bouton
+        if (window.scrollY > 300) {
+            btnRetourHaut.classList.add('visible');
+        } else {
+            btnRetourHaut.classList.remove('visible');
+        }
+    });
+
+    // Quand on clique sur le bouton, on remonte doucement
+    btnRetourHaut.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    </script>
 </body>
 </html>
