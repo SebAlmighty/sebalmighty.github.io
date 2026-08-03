@@ -821,9 +821,7 @@ footer {
     transform: translateY(-2px);
 }
 
-/* =========================================
-   BOUTON RETOUR EN HAUT
-   ========================================= */
+/*Bouton Retour en Haut*/
 #btn-retour-haut {
     position: fixed;
     bottom: 30px;
@@ -856,4 +854,29 @@ footer {
 #btn-retour-haut:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 25px rgba(31, 111, 235, 0.4);
+}
+
+/* Bouton de changement de langue*/
+
+.btn-langue {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 18px;
+    background: rgba(15, 23, 42, 0.03);
+    color: var(--couleur-secondaire);
+    border: 1px solid var(--couleur-bordure);
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px rgba(15, 23, 42, 0.02);
+}
+
+.btn-langue:hover {
+    background: rgba(31, 111, 235, 0.08);
+    border-color: rgba(31, 111, 235, 0.3);
+    transform: translateY(-2px);
+    color: var(--couleur-principale);
 }

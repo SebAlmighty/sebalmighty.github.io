@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian Novak</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css?v=1">
+    <link rel="icon" type="image/x-icon" href="./img/NOVAK portraits iut info-437.jpg">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="hero">
+                <div class="hero-photo">
+                    <img src="./img/NOVAK portraits iut info-437.jpg" alt="Portrait of Sebastian Novak">
+                </div>
+                <div class="hero-info">
+                    <h1>Sebastian NOVAK</h1>
+                    <p class="poste">Computer Science Student (BUT) - Seeking an Internship / Work-Study Program</p>
+                    <div class="hero-actions">
+                        <div class="contact-links">
+                            <a href="mailto:sebastian.novak276@gmail.com" aria-label="Email">
+                                <i class="ti ti-mail"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/sebastian-novak-9bb6b335a" target="_blank" aria-label="LinkedIn Profile">
+                                <i class="ti ti-brand-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/SebAlmighty" target="_blank" aria-label="GitHub Profile">
+                                <i class="ti ti-brand-github"></i>
+                            </a>
+                        </div>
+                        <a class="btn-primary" type="application/pdf" href="./CV_Sebastian_Novak_English.pdf">
+                            Download my Resume
+                        </a>
+                        <!-- Bouton pour revenir au Français -->
+                        <a href="index.html" class="btn-langue" aria-label="Passer en français">
+                            🇫🇷 FR
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="profil" class="section">
+                <h2><i class="ti ti-user"></i> Profile</h2>
+                <div class="profil-contenu">
+                    <p>
+                         I am a second-year Computer Science student (BUT) at the University of Lille. As of now I am seeking a 16 week internship or a work-study program. Passionate about everything related to technology, I enjoy exploring the latest innovations in the IT world as well as previous generations of software and hardware. <br> Upon completing this degree, I would be thrilled to work in a multinational company to put my skills to use for a large organization and see firsthand how such a company operates. <br>Thanks to my education, I have had the opportunity to improve my skills in various languages such as Java, C#, HTML/CSS, JavaScript, and SQL. Highly motivated and persevering, I quickly integrate into a team, communicate easily, and adapt well to demanding environments.
+                    </p>
+                </div>
+            </section>
+
+            <section id="competences" class="section">
+                <h2><i class="ti ti-tools"></i> Technical Skills</h2>
+                <ul class="competences-liste">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>SQL (PostgreSQL)</li>
+                    <li>Git & GitHub</li>
+                    <li>Agile Methodologies (Scrum)</li>
+                </ul>
+            </section>
+
+            <section id="projets" class="section">
+                <h2><i class="ti ti-hexagon-3d"></i> Soft Skills</h2>
+                <ul class="softskills-liste">
+                    <li>
+                        <h3>Clear Communication</h3>
+                        <p>Writing detailed reports for supervisors and leading iteration demonstrations.</p>
+                    </li>
+                    <li>
+                        <h3>Team Player</h3>
+                        <p>Facilitating Scrum meetings and supporting teammates with blocking issues.</p>
+                    </li>
+                    <li>
+                        <h3>Autonomy & Curiosity</h3>
+                        <p>Weekly tech watch (Java, DevOps) and continuous updates to my personal portfolio.</p>
+                    </li>
+                    <li>
+                        <h3>Time Management</h3>
+                        <p>Planning student sprints using Kanban boards and information radiators.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="formation" class="section">
+                <h2><i class="ti ti-folder-code"></i> Projects & Portfolio</h2>
+                <div class="projets-grille">
+
+                    <div class="projet-carte" style="cursor: pointer;" onclick="ouvrirModale(this)"
+                         data-titre="Merge Conflict"
+                         data-sous-titre="Development of a 'Shoot 'em up' game in TypeScript"
+                         data-description="This 3-person team project aimed to create a Shoot 'em up video game playable solo or in online multiplayer using TypeScript and socket.io. It highlights everything we learned during our 4th semester regarding JavaScript and TypeScript. We had to use GitLab's Milestones, Issue Boards, and Issues to manage our project as efficiently as possible by breaking it down into specific micro-tasks and scheduling them. The final grade was based on the project's quality as well as strict adherence to the imposed project management method. My role mainly focused on developing essential game mechanics such as character and enemy shooting, managing bonus items, and adding sound effects to enhance the artistic direction. The workload was reasonably distributed among team members, making it a positive example of a well-organized large-scale project."
+                         data-tags="TypeScript, Socket.io, Git, BUT2"
+                         data-image="./img/DoomGuy_and_Marie.png"
+                         data-lien="https://github.com/SebAlmighty/Merge-Conflict">
+                         <div class="projet-image">
+                            <img src="./img/DoomGuy_and_Marie.png" alt="Merge Conflict project preview">
+                        </div>
+                        <div class="projet-contenu">
+                            <h3>Merge Conflict</h3>
+                            <p>Development of a 'Shoot 'em up' game in TypeScript</p>
+                            <div class="projet-tags">
+                                <span>TypeScript</span>
+                                <span>Socket.io</span>
+                                <span>Git</span>
+                                <span>BUT2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projet-carte" style="cursor: pointer;" onclick="ouvrirModale(this)"
+                         data-titre="REST API Development Project"
+                         data-sous-titre="Development of a waste management REST API in Java (JEE)"
+                         data-description="The goal of this project was to create a waste management platform (waste types, collection points, drop-off locations, etc.) through web requests such as GET, POST, PUT, PATCH, and DELETE by building a REST API in Java with a Tomcat server and a PostgreSQL database using BASIC token authentication. This project showcases the skills acquired during our 4th-semester web development course. Originally intended as a 2-person group project, it ended up being a solo endeavor for me. My role spanned the entire project: API development (using the MVC pattern, creating endpoints), database creation and management, API request testing via Bruno, and writing the comprehensive API documentation. I did not encounter any major difficulties during this project."
+                         data-tags="Java, JEE, REST API, Tomcat, BUT2"
+                         data-image="./img/Rest_API.png"
+                         data-lien="https://gitlab.univ-lille.fr/sebastian.novak.etu/sae-rest">
+                         <div class="projet-image">
+                            <img src="./img/Rest_API.png" alt="REST API project preview">
+                        </div>
+                        <div class="projet-contenu">
+                            <h3>REST API Development</h3>
+                            <p>Development of a waste management REST API in Java (JEE)</p>
+                            <div class="projet-tags">
+                                <span>Java</span>
+                                <span>JEE</span>
+                                <span>REST API</span>
+                                <span>Tomcat</span>
+                                <span>BUT2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projet-carte" style="cursor: pointer;" onclick="ouvrirModale(this)"
+                         data-titre="Matrix Server & Element Client Deployment"
+                         data-sous-titre="Full deployment of a Matrix server with an Element client using a PostgreSQL database"
+                         data-description="This 3-person team project involved creating and configuring an Element client using a Matrix server and a PostgreSQL database. We also created comprehensive procedures (tutorials) explaining how to efficiently reproduce the entire process. It highlights our deployment and network management skills acquired during our 1st year, as well as those from the 3rd semester. My role involved configuring the virtual machines to ensure all components communicated properly, as well as writing the procedures. We encountered some challenges while setting up the virtual machines, but the official documentation for Matrix, Element, and PostgreSQL helped us overcome them."
+                         data-tags="Bash, Linux, PostgreSQL, Markdown / Emacs, BUT2"
+                         data-image="./img/element.jpeg"
+                         data-lien="https://github.com/SebAlmighty/SAE-3.03-Deploiement">
+                         <div class="projet-image">
+                            <img src="./img/element.jpeg" alt="Element project preview">
+                        </div>
+                        <div class="projet-contenu">
+                            <h3>Matrix Server & Element Deployment</h3>
+                            <p>Deployment of a Matrix server with an Element client and creation of reproducible procedures.</p>
+                            <div class="projet-tags">
+                                <span>Bash</span>
+                                <span>Linux</span>
+                                <span>PostgreSQL</span>
+                                <span>Markdown / Emacs</span>
+                                <span>BUT2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projet-carte" style="cursor: pointer;" onclick="ouvrirModale(this)"
+                         data-titre="Maze Game Development Project"
+                         data-sous-titre="Creation of a maze game in Java using the MVC (Model View Controller) pattern"
+                         data-description="Conducted by a team of 5, this project aimed to create a video game where the goal is to find the exit of a maze with the fewest possible moves. The game includes both a progression mode and a freeplay mode, along with varying difficulty levels. The development strictly followed a precise set of specifications provided by the client (our professors), utilizing the MVC design pattern and featuring intuitive interfaces built with JavaFX. The mazes were randomly generated using Prim's algorithm, as required. My role focused on developing the controller and its communication with the model, as well as working on the view to add useful in-game details for the player."
+                         data-tags="Java, JavaFX, Code Quality, BUT2"
+                         data-image="./img/Labirint.png"
+                         data-lien="https://github.com/SebAlmighty/SAE-3.02-Labyrinthes">
+                         <div class="projet-image">
+                            <img src="./img/Labirint.png" alt="Maze game preview">
+                        </div>
+                        <div class="projet-contenu">
+                            <h3>Maze Game Development</h3>
+                            <p>Java Project: Development of a maze game using the MVC pattern, featuring a freeplay mode and a challenge-based progression mode.</p>
+                            <div class="projet-tags">
+                                <span>Java</span>
+                                <span>JavaFX</span>
+                                <span>Code Quality</span>
+                                <span>BUT2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projet-carte" style="cursor: pointer;" onclick="ouvrirModale(this)"
+                         data-titre="Game Development with Scrum"
+                         data-sous-titre="Creation of a CLI video game in 4 days using the Agile Scrum methodology"
+                         data-description="This project marked the beginning of our second year. In a randomized team of 5, we were tasked with creating a Java game using the Agile Scrum methodology, which required far more intense organization than our previous projects. The game, named 'Gamblor', centered around games of chance (Blackjack, Roulette, Slots) and included fun features like random events, a shop for special items (similar to Balatro), and a 'black market' to sell personal possessions. It showcased all our 1st-year skills (Java, OOP, teamwork) and introduced us to Scrum. We managed our tasks effectively using a Kanban board, daily stand-ups, user stories, and sprint planning. My role focused on programming the game modes and designing random events and shop contents. Furthermore, I acted as Scrum Master, setting up User Stories and retrospective documents. Thanks to solid organization, we faced few difficulties, though adapting to Scrum took some initial effort."
+                         data-tags="Java, Scrum, BUT2"
+                         data-image="./img/Gamblor.png"
+                         data-lien="https://github.com/SebAlmighty/Projet_Agile_S3">
+                         <div class="projet-image">
+                            <img src="./img/Gamblor.png" alt="Scrum game preview">
+                        </div>
+                        <div class="projet-contenu">
+                            <h3>Game Development with Scrum</h3>
+                            <p>Java Project (Scrum): Design and development of 'Gamblor', combining several casino mini-games (Blackjack, roulette, slots).</p>
+                            <div class="projet-tags">
+                                <span>Java</span>
+                                <span>Scrum</span>
+                                <span>BUT2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projet-carte" style="cursor: pointer;" onclick="ouvrirModale(this)"
+                         data-titre="Java Application Development"
+                         data-sous-titre="Creation of an international exchange (Erasmus) matching application using Java and JavaFX"
+                         data-description="Development of a JavaFX application designed to manage youth exchanges between different countries, utilizing graph theory to optimize matching based on individual criteria. Spread over 3 months, this project marked the end of our first year. It merged three subjects from our 2nd semester: Graph Theory, Object-Oriented Programming (OOP), and Human-Computer Interaction (HCI). Because it was a 3-person group project, strong communication and rigor were major assets. My contribution primarily focused on the back-end (the app's logic and mechanics) and the JavaFX interface. We encountered some hurdles with JavaFX as we were still getting used to it, but we overcame them by working collaboratively."
+                         data-tags="Java, JavaFX, BUT1"
+                         data-image="./img/Erasmus.png"
+                         data-lien="https://github.com/SebAlmighty/SAE-2.02">
+                         <div class="projet-image">
+                            <img src="./img/Erasmus.png" alt="JavaFX App preview">
+                        </div>
+                        <div class="projet-contenu">
+                            <h3>Java Application Development</h3>
+                            <p>Design and development of a JavaFX application for international student matching.</p>
+                            <div class="projet-tags">
+                                <span>Java</span>
+                                <span>JavaFX</span>
+                                <span>BUT1</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projet-carte" style="cursor: pointer;" onclick="ouvrirModale(this)"
+                         data-titre="Network Installation Project"
+                         data-sous-titre="VM creation and connection to GitLab/GitHub"
+                         data-description="This 3-person team project involved configuring a Linux virtual machine from scratch. We set up a complete development environment, managed SSH keys for connecting to remote repositories (GitLab/GitHub), and wrote the documentation using Ascii Doctor. This 1st-year project highlights our networking skills, VM configuration abilities, and exhaustive documentation practices. My contribution spanned the entire project: VM configuration, installation of required programs, and documenting our work. The process was smooth thanks to clear official documentation."
+                         data-tags="Ascii Doctor, CSS, Linux, Bash, BUT1"
+                         data-image="./img/datacenter.jpg"
+                         data-lien="https://github.com/SebAlmighty/S2.03">
+                         <div class="projet-image">
+                            <img src="./img/datacenter.jpg" alt="Network project preview">
+                        </div>
+                        <div class="projet-contenu">
+                            <h3>Network Installation Project</h3>
+                            <p>Creation and configuration of a virtual machine capable of connecting to GitLab / GitHub over a network.</p>
+                            <div class="projet-tags">
+                                <span>Ascii Doctor</span>
+                                <span>CSS</span>
+                                <span>Linux</span>
+                                <span>Bash</span>
+                                <span>BUT1</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projet-carte" style="cursor: pointer;" onclick="ouvrirModale(this)"
+                         data-titre="E-Portfolio Website"
+                         data-sous-titre="Creation of a portfolio website showcasing my skills and projects"
+                         data-description="This is an ongoing solo project that I continuously update to showcase my academic journey in Computer Science and everything that will follow!"
+                         data-tags="HTML, CSS, JavaScript, BUT1, BUT2, BUT3"
+                         data-image="./img/NOVAK portraits iut info-437.jpg"
+                         data-lien="https://sebalmighty.github.io/">
+                         <div class="projet-image">
+                            <img src="./img/NOVAK portraits iut info-437.jpg" alt="Portfolio preview">
+                        </div>
+                        <div class="projet-contenu">
+                            <h3>E-Portfolio Website</h3>
+                            <p>Creation of an ever-improving digital resume highlighting my HTML and CSS skills.</p>
+                            <div class="projet-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>BUT1</span>
+                                <span>BUT2</span>
+                                <span>BUT3</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="experiences" class="section">
+                <h2><i class="ti ti-briefcase"></i> Professional Experience</h2>
+                <div class="experiences-liste">
+                    
+                    <div class="experience-carte">
+                        <div class="experience-en-tete">
+                            <div class="experience-titre-boite">
+                                <h3>Augmented Reality Developer Intern</h3>
+                                <span class="experience-entreprise">Ircica Laboratory, Villeneuve D'Ascq</span>
+                            </div>
+                            <div class="experience-date">April 2026 — June 2026</div>
+                        </div>
+                        <p class="experience-description">
+                            Development of an AR application using Unity and C# with a Magic Leap 2 headset.
+                        </p>
+                        <div class="experience-tags">
+                            <span>Unity</span>
+                            <span>C#</span>
+                            <span>AR</span>
+                        </div>
+                    </div>
+
+                    <div class="experience-carte">
+                        <div class="experience-en-tete">
+                            <div class="experience-titre-boite">
+                                <h3>Student Job - Metalworker</h3>
+                                <span class="experience-entreprise">Loison, Armentières</span>
+                            </div>
+                            <div class="experience-date">July 2025 — August 2025</div>
+                        </div>
+                        <p class="experience-description">
+                            Teamwork involving the installation of metal structures and glazing on construction sites.
+                        </p>
+                        <div class="experience-tags">
+                            <span>Teamwork</span>
+                            <span>Manual Labor</span>
+                            <span>Stress Management</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="section">
+                <h2><i class="ti ti-school"></i> Education</h2>
+                <div class="formation-liste">
+                    <div class="formation-item">
+                        <div class="formation-badge">2024 — Present</div>
+                        <div class="formation-contenu">
+                            <div class="formation-header">
+                                <h3>University Diploma in Technology (BUT) - Computer Science</h3>
+                                <span class="formation-ecole">IUT of Lille</span>
+                            </div>
+                            <p class="formation-description">
+                                Curriculum focused on application design, agile project management, and deployment of collaborative environments.
+                            </p>
+                            <ul class="formation-points">
+                                <li>Practical labs in Java, SQL, networking, and continuous integration.</li>
+                                <li>Team-based mentored projects involving Scrum roles and client deliverables.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="formation-item">
+                        <div class="formation-badge">2021 — 2024</div>
+                        <div class="formation-contenu">
+                            <div class="formation-header">
+                                <h3>High School Diploma (Baccalauréat)</h3>
+                                <span class="formation-ecole">Lycée Gustave Eiffel, Armentières</span>
+                            </div>
+                            <p class="formation-description">
+                                Majors in Mathematics and Computer Science, emphasizing scientific rigor and programming logic.
+                            </p>
+                            <ul class="formation-points">
+                                <li>Python projects focusing on algorithms and data structures.</li>
+                                <li>Analytical work and oral presentations in front of an academic jury.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2><i class="ti ti-language"></i> Languages</h2>
+                <div class="langues-grille">
+                    <div class="langue-carte">
+                        <div class="langue-niveau">
+                            <span>French</span>
+                            <strong>Native / C1</strong>
+                        </div>
+                        <p>Professional and personal written and oral expression.</p>
+                    </div>
+                    <div class="langue-carte">
+                        <div class="langue-niveau">
+                            <span>English</span>
+                            <strong>C1</strong>
+                        </div>
+                        <p>Reading technical documentation and attending meetings with international students.</p>
+                    </div>
+                    <div class="langue-carte">
+                        <div class="langue-niveau">
+                            <span>German</span>
+                            <strong>B1 (Academic)</strong>
+                        </div>
+                        <p>Everyday communication and exchanges in an academic context.</p>
+                    </div>
+                    <div class="langue-carte">
+                        <div class="langue-niveau">
+                            <span>Romanian</span>
+                            <strong>Native / C1</strong>
+                        </div>
+                        <p>Everyday communication and exchanges in personal and academic contexts.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2025 - Sebastian NOVAK. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <!-- Modale HTML -->
+    <div id="modale-projet" class="modale-overlay">
+        <div class="modale-contenu">
+            <div class="modale-banniere">
+                <img src="https://via.placeholder.com/800x300/333/fff?text=Project+Banner" alt="Project Banner">
+            </div>
+            
+            <div class="modale-corps">
+                <h2 class="modale-titre">Project Title</h2>
+                <p class="modale-sous-titre">Project Subtitle</p>
+                
+                <p class="modale-description">
+                    Project Description...
+                </p>
+                
+                <div class="modale-tags">
+                    <!-- Les tags seront injectés ici via JS -->
+                </div>
+                
+                <div class="modale-actions">
+                    <a href="#" class="btn-modale-primaire" target="_blank">
+                        View Project <i class="ti ti-external-link"></i>
+                    </a>
+                    <button class="btn-modale-secondaire" id="btn-fermer-modale">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bouton Retour en haut -->
+    <button id="btn-retour-haut" aria-label="Back to top">
+        <i class="ti ti-arrow-up"></i>
+    </button>
+
+    <script>
+    // Sélection des éléments de la modale
+    const modale = document.getElementById('modale-projet');
+    const btnFermer = document.getElementById('btn-fermer-modale');
+    
+    const modaleTitre = document.querySelector('.modale-titre');
+    const modaleSousTitre = document.querySelector('.modale-sous-titre');
+    const modaleDescription = document.querySelector('.modale-description');
+    const modaleImage = document.querySelector('.modale-banniere img');
+    const modaleLien = document.querySelector('.btn-modale-primaire');
+    const modaleTagsConteneur = document.querySelector('.modale-tags');
+
+    function ouvrirModale(elementCarte) {
+        const titre = elementCarte.getAttribute('data-titre');
+        const sousTitre = elementCarte.getAttribute('data-sous-titre');
+        const description = elementCarte.getAttribute('data-description');
+        const image = elementCarte.getAttribute('data-image');
+        const lien = elementCarte.getAttribute('data-lien');
+        const tagsBruts = elementCarte.getAttribute('data-tags');
+
+        modaleTitre.textContent = titre || "Project Title";
+        modaleSousTitre.textContent = sousTitre || "";
+        modaleDescription.textContent = description || "Description unavailable.";
+        modaleImage.src = image || "https://via.placeholder.com/800x300/1c1f2a/ffffff?text=Project+Image";
+        
+        if (lien) {
+            modaleLien.href = lien;
+            modaleLien.style.display = 'inline-flex';
+        } else {
+            modaleLien.style.display = 'none';
+        }
+
+        modaleTagsConteneur.innerHTML = '';
+        if (tagsBruts) {
+            const tableauTags = tagsBruts.split(',');
+            tableauTags.forEach(tag => {
+                const span = document.createElement('span');
+                span.textContent = tag.trim();
+                modaleTagsConteneur.appendChild(span);
+            });
+        }
+
+        modale.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function fermerModale() {
+        modale.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+
+    btnFermer.addEventListener('click', fermerModale);
+
+    modale.addEventListener('click', function(e) {
+        if (e.target === modale) {
+            fermerModale();
+        }
+    });
+
+    const btnRetourHaut = document.getElementById('btn-retour-haut');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            btnRetourHaut.classList.add('visible');
+        } else {
+            btnRetourHaut.classList.remove('visible');
+        }
+    });
+
+    btnRetourHaut.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    </script>
+</body>
+</html>
